@@ -1,0 +1,3 @@
+C/C++ General -> Additional includ directories -- C:\OpenCV\opencv\build\include -> Applay
+Linker -> General -> Additional library directories -- C:\OpenCV\opencv\build\x64\vc14\lib -> Applay
+Linker -> Input -> Additional Dipendencies -> Edit -- opencv_world401d.lib -> Aplay
