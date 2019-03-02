@@ -23,11 +23,12 @@ void stretching(cv::Mat& img,int L,int H)
 		int x_old = 0;
 		for (size_t j = 0; j < img.cols; j++)
 		{
-			x_old = (img.at<cv::Vec3b>(i, j)[0] +
-				img.at<cv::Vec3b>(i, j)[1] +
-				img.at<cv::Vec3b>(i, j)[2]) / 3;
+			auto pixel = img.at<cv::Vec3b>(i,j);
+			x_old = (pixel[0] +
+				pixel[1] +
+				pixel[2]) / 3;
 			
-			int x_new = 255 * (x_old - L) / (H - L);
+			int x_new = ((x_old - L) * 255)/ (H - L);
 
 			if (x_new > 255) {
 				x_new = 255;
