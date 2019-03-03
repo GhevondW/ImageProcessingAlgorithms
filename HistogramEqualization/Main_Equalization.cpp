@@ -9,6 +9,8 @@ const std::string output_path = "Files/HistogramEqualization/Result.png";
 
 const int GrayLevel = 256;
 
+//----------------------------Main logic--------------------------------------
+
 void equalize(cv::Mat& img) {
 
 	double hist[GrayLevel];
@@ -43,6 +45,8 @@ void equalize(cv::Mat& img) {
 	}
 
 }
+
+//------------------------------------------------------------------------------------
 
 int main() {
 	cv::Mat img = cv::imread(input_path);
