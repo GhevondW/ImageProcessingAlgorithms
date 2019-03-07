@@ -31,8 +31,8 @@ namespace {
 					{
 						auto pixel = img.at<cv::Vec3b>(k, l);
 						temp_red.push_back(pixel[0]);
-						temp_red.push_back(pixel[1]);
-						temp_red.push_back(pixel[2]);
+						temp_green.push_back(pixel[1]);
+						temp_blue.push_back(pixel[2]);
 					}
 				}
 
