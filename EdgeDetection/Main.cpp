@@ -7,8 +7,8 @@
 namespace 
 {
 
-	const std::string input_path = "Files/EdgeDetection/input1.jpg";
-	const std::string output_path = "Files/EdgeDetection/Result.jpg";
+	const std::string input_path = "Files/EdgeDetection/input3.jpg";
+	const std::string output_path = "Files/EdgeDetection/Result3.jpg";
 
 	void make_gray(cv::Mat& img) {
 
